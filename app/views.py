@@ -1,13 +1,13 @@
 import calendar
 from flask import render_template, redirect
-from flask.ext.appbuilder.models.sqla.interface import SQLAInterface
-from flask.ext.appbuilder.widgets import ListThumbnail, ListWidget, ListItem, ListBlock, ShowBlockWidget, ListLinkWidget
-from flask.ext.appbuilder.actions import action
-from flask.ext.appbuilder.models.group import aggregate_count, aggregate_avg, aggregate_sum
-from flask.ext.appbuilder.views import MasterDetailView, ModelView
-from flask.ext.appbuilder.baseviews import expose, BaseView
-from flask.ext.appbuilder.charts.views import DirectByChartView, GroupByChartView
-from flask.ext.babel import lazy_gettext as _
+from flask_appbuilder.models.sqla.interface import SQLAInterface
+from flask_appbuilder.widgets import ListThumbnail, ListWidget, ListItem, ListBlock, ShowBlockWidget, ListLinkWidget
+from flask_appbuilder.actions import action
+from flask_appbuilder.models.group import aggregate_count, aggregate_avg, aggregate_sum
+from flask_appbuilder.views import MasterDetailView, ModelView
+from flask_appbuilder.baseviews import expose, BaseView
+from flask_appbuilder.charts.views import DirectByChartView, GroupByChartView
+from flask_babel import lazy_gettext as _
 
 from app import db, appbuilder
 from models import ContactGroup, Gender, Contact, CountryStats, Country
